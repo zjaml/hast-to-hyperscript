@@ -131,6 +131,8 @@ function toH(h, node, ctx) {
       elements.push(toH(h, value, ctx))
     } else if (text(value)) {
       elements.push(value.value)
+    } else {
+      elements.push(value)
     }
   }
 
